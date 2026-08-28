@@ -526,26 +526,24 @@ nav.wrap{padding:8px 16px;}
 <h2>Descarga tu guía práctica para escoger suplementos nutricionales</h2>
 <p>Todo lo que necesitas saber antes de elegir un suplemento: cuándo podrías necesitar uno, qué categorías existen y por qué el asesoramiento profesional hace la diferencia. Déjame tu correo y te la envío gratis.</p>
 <style>
-.guia-form{width:100%;}
+.guia-form{width:100%;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px;box-sizing:border-box;}
 .guia-form .field-row{margin:0 0 10px 0;}
 #guiaFormWrap input[type="text"],
-#guiaFormWrap input[type="email"]{background-color:rgba(255,255,255,0.08) !important;color:var(--paper) !important;border:1px solid rgba(239,234,224,0.3) !important;border-radius:100px;font-family:'Work Sans',sans-serif;font-size:0.95rem;line-height:21px;padding:14px 18px;width:100%;box-sizing:border-box;margin-bottom:0 !important;}
+#guiaFormWrap input[type="email"]{background-color:var(--paper) !important;color:var(--ink) !important;border:1px solid var(--line) !important;border-radius:100px !important;font-family:'Work Sans',sans-serif;font-size:0.95rem;line-height:21px;padding:14px 18px;width:100%;box-sizing:border-box;margin-bottom:0 !important;}
 #guiaFormWrap input[type="text"]::placeholder,
-#guiaFormWrap input[type="email"]::placeholder{color:var(--paper-2) !important;opacity:1;}
+#guiaFormWrap input[type="email"]::placeholder{color:var(--ink-soft) !important;opacity:1;}
 #guiaFormWrap input[type="text"]:focus,
-#guiaFormWrap input[type="email"]:focus{outline:none;border-color:var(--papaya-light) !important;}
-#guiaFormWrap input[type="text"]:-webkit-autofill,
-#guiaFormWrap input[type="email"]:-webkit-autofill{-webkit-text-fill-color:var(--paper);-webkit-box-shadow:0 0 0px 1000px var(--olive-dark) inset;transition:background-color 9999s ease-in-out 0s;}
+#guiaFormWrap input[type="email"]:focus{outline:none;border-color:var(--papaya) !important;}
 .guia-checkbox-row{display:flex;align-items:center;gap:10px;margin:4px 0 16px;}
-.guia-checkbox-row input[type=checkbox]{width:18px;height:18px;flex-shrink:0;accent-color:var(--papaya);cursor:pointer;}
-.guia-checkbox-row label{font-size:0.88rem;color:var(--paper-2);cursor:pointer;}
+.guia-checkbox-row input[type=checkbox]{width:18px;height:18px;flex-shrink:0;padding:0;margin:0;accent-color:var(--papaya);cursor:pointer;}
+.guia-checkbox-row label{font-size:0.88rem;color:var(--ink-soft);cursor:pointer;}
 .guia-submit{background-color:var(--papaya);border:none;border-radius:100px;color:#fff;cursor:pointer;font-family:'Work Sans',sans-serif;font-size:0.95rem;font-weight:500;padding:14px;width:100%;box-sizing:border-box;transition:background-color .2s;}
 .guia-submit:hover{background-color:#c9591f;}
 .guia-submit:disabled{opacity:0.6;cursor:default;}
 .guia-msg{display:none;background:rgba(239,234,224,0.12);border:1px solid rgba(239,234,224,0.3);border-radius:14px;padding:18px 20px;}
 .guia-msg h4{color:var(--paper);font-family:'Fraunces',serif;font-size:1.1rem;margin:0 0 6px;}
 .guia-msg p{color:var(--paper-2);font-family:'Work Sans',sans-serif;font-size:0.92rem;margin:0;}
-.guia-error{display:none;color:#ffb4a2;font-size:0.85rem;margin-top:8px;}
+.guia-error{display:none;color:#c0392b;font-size:0.85rem;margin-top:8px;}
 .guia-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
 </style>
 <div id="guiaFormWrap">
