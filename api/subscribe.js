@@ -20,7 +20,7 @@ module.exports = async function handler(req, res) {
 
   try {
     const body = req.body || {};
-    const { nombre, email, empresa } = body;
+    const { nombre, email, empresa, wantsInfo } = body;
 
     // Honeypot field: real users never fill this hidden input.
     // If it's filled, silently pretend success without sending anything.
@@ -30,6 +30,7 @@ module.exports = async function handler(req, res) {
 
     const name = typeof nombre === 'string' ? nombre.trim().slice(0, 200) : '';
     const mail = typeof email === 'string' ? email.trim().slice(0, 200) : '';
+    const wantsInfoText = wantsInfo ? 'Sí' : 'No';
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!name || !mail || !emailRegex.test(mail)) {
@@ -53,8 +54,8 @@ module.exports = async function handler(req, res) {
         to: ['sofiachi_08@uc.cl'],
         reply_to: mail,
         subject: 'Nuevo inscrito de Guía Práctica',
-        text: `Nombre: ${name}\nMail: ${mail}`,
-        html: `<p>Nombre: ${escapeHtml(name)}</p><p>Mail: ${escapeHtml(mail)}</p>`,
+        text: `Nombre: ${name}\nMail: ${mail}\nQuiere recibir información: ${wantsInfoText}`,
+        html: `<p>Nombre: ${escapeHtml(name)}</p><p>Mail: ${escapeHtml(mail)}</p><p>Quiere recibir información: ${wantsInfoText}</p>`,
       }),
     });
 
