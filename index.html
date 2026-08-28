@@ -40,6 +40,16 @@ nav.wrap{display:flex;align-items:center;justify-content:space-between;padding:1
 .navlinks a:hover{color:var(--papaya);}
 .navcta{background:var(--olive-dark);color:var(--paper);padding:10px 20px;border-radius:100px;text-decoration:none;font-size:0.88rem;font-weight:500;transition:background .2s;white-space:nowrap;}
 .navcta:hover{background:var(--papaya);}
+.nav-actions{display:flex;align-items:center;gap:10px;}
+.menu-toggle{display:none;background:none;border:none;padding:6px;margin:0;cursor:pointer;color:var(--olive-dark);align-items:center;justify-content:center;border-radius:8px;}
+.menu-toggle:hover{background:rgba(59,50,38,0.06);}
+.mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--card);border-bottom:1px solid var(--line);box-shadow:0 10px 24px rgba(59,50,38,0.12);}
+.mobile-menu.open{display:block;}
+.mobile-menu ul{list-style:none;margin:0;padding:6px 24px 14px;display:flex;flex-direction:column;}
+.mobile-menu li{border-top:1px solid var(--line);}
+.mobile-menu li:first-child{border-top:none;}
+.mobile-menu a{display:block;padding:13px 2px;text-decoration:none;color:var(--ink);font-size:0.95rem;}
+.mobile-menu a:hover{color:var(--papaya);}
 .hero{padding:110px 0 90px;}
 .hero-grid{max-width:720px;margin:0 auto;text-align:center;}
 .hero h1{font-size:3.1rem;line-height:1.08;letter-spacing:-0.01em;}
@@ -166,6 +176,7 @@ footer{padding:36px 0;text-align:center;font-size:0.85rem;color:var(--ink-soft);
 .servicios-grid{grid-template-columns:1fr;}
 .contacto-grid{grid-template-columns:1fr;}
 .navlinks{display:none;}
+.menu-toggle{display:inline-flex;}
 section{padding:56px 0;}
 .section-head h2{font-size:1.7rem;}
 .newsletter-grid{grid-template-columns:1fr;}
@@ -203,8 +214,23 @@ nav.wrap{padding:8px 16px;}
 <li><a href="#faq">Preguntas</a></li>
 <li><a href="#contacto">Conversemos</a></li>
 </ul>
+<div class="nav-actions">
+<button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+</button>
 <a href="https://clinifica.com/pro/sofia-andrea-cortes-monroy-terra" class="navcta" target="_blank" rel="noopener">Agendar consulta</a>
+</div>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+<ul>
+<li><a href="#areas">Áreas</a></li>
+<li><a href="#enfoque">Mi enfoque</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#faq">Preguntas</a></li>
+<li><a href="#contacto">Conversemos</a></li>
+</ul>
+</div>
 </header>
 <main>
 <section class="hero">
@@ -665,5 +691,23 @@ btn.textContent = 'Quiero mi guía gratis';
 <footer>
 <div class="wrap">© 2026 Sofía Cortés-Monroy · Nutricionista clínica · Consultas online y a domicilio en Santiago oriente · <a href="https://nutrisofiacm.cl" style="color:inherit;text-decoration:underline;">nutrisofiacm.cl</a></div>
 </footer>
+<script>
+(function(){
+var toggle = document.getElementById('menuToggle');
+var menu = document.getElementById('mobileMenu');
+if(!toggle || !menu) return;
+function closeMenu(){
+menu.classList.remove('open');
+toggle.setAttribute('aria-expanded','false');
+}
+toggle.addEventListener('click', function(){
+var isOpen = menu.classList.toggle('open');
+toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+});
+menu.querySelectorAll('a').forEach(function(link){
+link.addEventListener('click', closeMenu);
+});
+})();
+</script>
 </body>
 </html>
