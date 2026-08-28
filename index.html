@@ -528,12 +528,14 @@ nav.wrap{padding:8px 16px;}
 <style>
 .guia-form{width:100%;}
 .guia-form .field-row{margin:0 0 10px 0;}
-.guia-form input[type=text],
-.guia-form input[type=email]{background-color:rgba(255,255,255,0.08);color:var(--paper);border:1px solid rgba(239,234,224,0.3);border-radius:100px;font-family:'Work Sans',sans-serif;font-size:0.95rem;line-height:21px;padding:14px 18px;width:100%;box-sizing:border-box;}
-.guia-form input[type=text]::placeholder,
-.guia-form input[type=email]::placeholder{color:var(--paper-2);}
-.guia-form input[type=text]:focus,
-.guia-form input[type=email]:focus{outline:none;border-color:var(--papaya-light);}
+#guiaFormWrap input[type="text"],
+#guiaFormWrap input[type="email"]{background-color:rgba(255,255,255,0.08) !important;color:var(--paper) !important;border:1px solid rgba(239,234,224,0.3) !important;border-radius:100px;font-family:'Work Sans',sans-serif;font-size:0.95rem;line-height:21px;padding:14px 18px;width:100%;box-sizing:border-box;margin-bottom:0 !important;}
+#guiaFormWrap input[type="text"]::placeholder,
+#guiaFormWrap input[type="email"]::placeholder{color:var(--paper-2) !important;opacity:1;}
+#guiaFormWrap input[type="text"]:focus,
+#guiaFormWrap input[type="email"]:focus{outline:none;border-color:var(--papaya-light) !important;}
+#guiaFormWrap input[type="text"]:-webkit-autofill,
+#guiaFormWrap input[type="email"]:-webkit-autofill{-webkit-text-fill-color:var(--paper);-webkit-box-shadow:0 0 0px 1000px var(--olive-dark) inset;transition:background-color 9999s ease-in-out 0s;}
 .guia-checkbox-row{display:flex;align-items:center;gap:10px;margin:4px 0 16px;}
 .guia-checkbox-row input[type=checkbox]{width:18px;height:18px;flex-shrink:0;accent-color:var(--papaya);cursor:pointer;}
 .guia-checkbox-row label{font-size:0.88rem;color:var(--paper-2);cursor:pointer;}
