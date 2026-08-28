@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sofía Cortés-Monroy | Nutricionista en Santiago — Deportiva, digestiva y hábitos</title>
+<meta name="description" content="Nutricionista clínica titulada PUC en Santiago oriente. Consultas online, a domicilio y presenciales en box en Las Condes, Vitacura, Lo Barnechea, La Reina y Providencia. Nutrición deportiva, salud digestiva y cambio de hábitos sostenible.">
+<link rel="canonical" href="https://nutrisofiacm.cl/">
+<meta property="og:title" content="Sofía Cortés-Monroy | Nutricionista en Santiago">
+<meta property="og:description" content="Nutrición personalizada para sentirte mejor, mejorar tu rendimiento y construir hábitos que puedas mantener.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--ink:#3B3226;
+--ink-soft:#6B6152;
+--paper:#FAF6EE;
+--paper-2:#F1EAD9;
+--card:#FFFFFF;
+--olive:#7C9473;
+--olive-dark:#445235;
+--papaya:#C1485B;
+--papaya-light:#F0C9CE;
+--line:rgba(59,50,38,0.14);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Work Sans', sans-serif;line-height:1.6;}
+h1,h2,h3{font-family:'Fraunces', serif;font-weight:500;margin:0 0 0.5em;color:var(--olive-dark);}
+.eyebrow{font-family:'Space Mono', monospace;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--papaya);margin-bottom:0.6em;display:block;}
+a{color:inherit;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+header{position:sticky;top:0;z-index:50;background:rgba(239,234,224,0.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
+nav.wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;}
+.logo a{font-family:'Fraunces',serif;font-weight:600;font-size:1.35rem;color:var(--olive-dark);text-decoration:none;letter-spacing:-0.01em;}
+.navlinks{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:0.92rem;}
+.navlinks a{text-decoration:none;color:var(--ink-soft);transition:color .2s;}
+.navlinks a:hover{color:var(--papaya);}
+.navcta{background:var(--olive-dark);color:var(--paper);padding:10px 20px;border-radius:100px;text-decoration:none;font-size:0.88rem;font-weight:500;transition:background .2s;white-space:nowrap;}
+.navcta:hover{background:var(--papaya);}
+.hero{padding:110px 0 90px;}
+.hero-grid{max-width:720px;margin:0 auto;text-align:center;}
+.hero h1{font-size:3.1rem;line-height:1.08;letter-spacing:-0.01em;}
+.hero-accent{width:56px;height:3px;background:var(--papaya);margin:0 auto 26px;border-radius:2px;}
+.btn{display:inline-block;padding:14px 26px;border-radius:100px;text-decoration:none;font-weight:500;font-size:0.95rem;transition:transform .15s, background .2s;border:none;cursor:pointer;font-family:'Work Sans',sans-serif;}
+.btn:hover{transform:translateY(-2px);}
+.btn-primary{background:var(--papaya);color:#fff;}
+.btn-primary:hover{background:#c9591f;}
+section{padding:76px 0;}
+.section-head{max-width:620px;margin:0 auto 48px;text-align:center;}
+.section-head h2{font-size:2rem;}
+.section-head p{color:var(--ink-soft);font-size:1.03rem;}
+.pilares-hero{text-align:center;}
+.leaf-deco{margin:0 auto 24px;display:block;}
+.pilares-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px;}
+.pilar-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px 24px;text-align:center;box-shadow:0 2px 10px rgba(59,50,38,0.05);}
+.pilar-bar{width:36px;height:3px;background:var(--olive);margin:0 auto 18px;border-radius:2px;}
+.pilar-icon{font-size:1.8rem;margin-bottom:14px;}
+.pilar-card h3{font-size:1.1rem;margin-bottom:10px;}
+.pilar-card p{color:var(--ink-soft);font-size:0.92rem;margin:0;}
+.sobre{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.sobre-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:56px;align-items:center;}
+.sobre-photo{aspect-ratio:4/5;border-radius:20px;overflow:hidden;}
+.photo-placeholder{width:100%;height:100%;min-height:180px;display:flex;align-items:center;justify-content:center;background:var(--paper-2);color:var(--ink-soft);font-family:'Space Mono',monospace;font-size:0.85rem;text-align:center;border:1px dashed var(--line);box-sizing:border-box;}
+.sobre-text p{color:var(--ink-soft);font-size:1.02rem;margin-bottom:16px;}
+.areas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.area-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:30px 26px;transition:border-color .2s, transform .2s;}
+.area-card:hover{border-color:var(--olive);transform:translateY(-3px);}
+.area-card h3{font-size:1.2rem;margin-bottom:10px;}
+.area-card p{color:var(--ink-soft);font-size:0.95rem;margin:0;}
+.enfoque{background:var(--olive-dark);color:var(--paper);}
+.enfoque .section-head h2{color:var(--paper);}
+.enfoque .section-head p{color:var(--paper-2);}
+.enfoque-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.enfoque-item{background:rgba(239,234,224,0.06);border:1px solid rgba(239,234,224,0.16);border-radius:14px;padding:22px;}
+.enfoque-item h3{color:var(--paper);font-size:1.02rem;margin-bottom:6px;}
+.enfoque-item p{color:var(--paper-2);font-size:0.88rem;margin:0;}
+.pasos{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.pasos-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
+.paso{text-align:center;}
+.paso-num{width:44px;height:44px;border-radius:50%;background:var(--olive-dark);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;margin:0 auto 14px;}
+.paso h3{font-size:1rem;margin-bottom:6px;}
+.paso p{font-size:0.88rem;color:var(--ink-soft);margin:0;}
+.servicios-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+.servicio-card ul{margin:0 0 14px;padding-left:18px;color:var(--ink-soft);font-size:0.9rem;}
+.servicio-card li{margin-bottom:5px;}
+.servicio-price{font-family:'Space Mono',monospace;font-size:1rem;color:var(--olive-dark);font-weight:700;}
+.servicio-modalidad{font-family:'Space Mono',monospace;font-size:0.78rem;color:var(--olive);display:block;margin-bottom:14px;}
+.servicios-subhead{font-family:'Space Mono',monospace;font-size:0.85rem;color:var(--olive-dark);margin:44px 0 20px;text-transform:uppercase;letter-spacing:0.06em;}
+.pack-card{grid-column:1 / -1;background:var(--olive-dark);color:var(--paper);border-radius:16px;padding:32px;}
+.pack-card h3{color:var(--paper);font-size:1.15rem;}
+.pack-card p{color:var(--paper-2);}
+.pack-card ul{color:var(--paper-2);}
+.pack-precio{display:flex;gap:14px;align-items:baseline;margin-top:10px;flex-wrap:wrap;}
+.pack-precio .tachado{text-decoration:line-through;color:var(--paper-2);font-family:'Space Mono',monospace;font-size:0.9rem;}
+.pack-precio .final{font-family:'Space Mono',monospace;font-size:1.3rem;color:var(--papaya-light);font-weight:700;}
+.pack-ahorro{font-size:0.82rem;color:var(--papaya-light);}
+.servicio-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:28px 26px;}
+.servicio-card h3{font-size:1.15rem;margin-bottom:8px;}
+.servicio-card p{color:var(--ink-soft);font-size:0.92rem;margin:0 0 12px;}
+.testimonios{background:var(--olive-dark);color:var(--paper);text-align:center;}
+.testimonios .section-head h2{color:var(--paper);}
+.consulta-foto{max-width:520px;margin:44px auto 0;border-radius:16px;overflow:hidden;}
+.consulta-foto p{background:var(--card);color:var(--ink-soft);font-size:0.85rem;text-align:center;padding:12px;margin:0;}
+.test-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:760px;margin:0 auto;}
+.test-grid-3{grid-template-columns:repeat(3,1fr);max-width:1080px;}
+@media(max-width:860px){.test-grid-3{grid-template-columns:1fr;}}
+.test-card{background:rgba(239,234,224,0.06);border:1px solid rgba(239,234,224,0.16);border-radius:16px;padding:26px;text-align:left;}
+.test-card p.quote{font-family:'Fraunces',serif;font-style:italic;font-size:1.05rem;margin:0 0 16px;line-height:1.5;color:var(--paper);}
+.test-card p.author{font-family:'Space Mono',monospace;font-size:0.8rem;color:var(--papaya-light);margin:0;}
+.faq{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.faq-item{border-bottom:1px solid var(--line);padding:18px 0;}
+.faq-item summary{cursor:pointer;font-weight:500;font-size:1rem;color:var(--olive-dark);list-style:none;display:flex;justify-content:space-between;align-items:center;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:'+';font-size:1.3rem;color:var(--papaya);}
+.faq-item[open] summary::after{content:'–';}
+.faq-item p{color:var(--ink-soft);font-size:0.95rem;margin:12px 0 0;}
+.cta-final{text-align:center;}
+.cta-final h2{font-size:2.1rem;}
+.cta-final p{color:var(--ink-soft);font-size:1.05rem;max-width:520px;margin:0 auto 32px;}
+.contacto-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
+.contact-item{display:flex;gap:16px;margin-bottom:22px;align-items:flex-start;}
+.contact-icon{width:40px;height:40px;border-radius:50%;background:var(--card);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--papaya);font-family:'Space Mono',monospace;font-size:0.85rem;}
+.contact-item h3{font-size:1rem;margin-bottom:4px;}
+.contact-item p{margin:0;color:var(--ink-soft);font-size:0.95rem;}
+form{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px;}
+form label{display:block;font-size:0.85rem;font-family:'Space Mono',monospace;color:var(--olive-dark);margin-bottom:6px;}
+form input, form textarea{width:100%;padding:12px 14px;margin-bottom:18px;border-radius:10px;border:1px solid var(--line);background:var(--paper);font-family:'Work Sans',sans-serif;font-size:0.95rem;color:var(--ink);}
+form textarea{resize:vertical;min-height:100px;}
+form button{width:100%;}
+.wa-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-family:'Space Mono',monospace;font-size:0.75rem;font-weight:700;z-index:60;box-shadow:0 4px 14px rgba(0,0,0,0.22);}
+footer{padding:36px 0;text-align:center;font-size:0.85rem;color:var(--ink-soft);border-top:1px solid var(--line);}
+.newsletter{background:var(--olive-dark);color:var(--paper);}
+.newsletter-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;}
+.newsletter h2{color:var(--paper);font-size:1.9rem;}
+.newsletter p{color:var(--paper-2);}
+.newsletter-badge{font-family:'Space Mono',monospace;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--papaya-light);margin-bottom:10px;display:block;}
+.newsletter-note{font-size:0.78rem;color:var(--paper-2);margin-top:10px;}
+.newsletter-cover .photo-placeholder{aspect-ratio:3/4;max-width:260px;width:100%;margin:0 auto;border-radius:14px;}
+.blog-list{max-width:760px;margin:0 auto;border-top:1px solid var(--line);}
+.blog-row{display:flex;align-items:center;gap:16px;padding:16px 4px;border-bottom:1px solid var(--line);}
+.blog-row-icon{width:38px;height:38px;border-radius:50%;background:var(--card);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.05rem;}
+.blog-row-body{flex:1;min-width:0;}
+.blog-row-tag{font-family:'Space Mono',monospace;font-size:0.68rem;color:var(--papaya);text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:2px;}
+.blog-row h3{font-size:0.98rem;margin:0 0 2px;font-weight:500;}
+.blog-row h3 a{color:var(--olive-dark);text-decoration:none;}
+.blog-row h3 a:hover{color:var(--papaya);}
+.blog-row p{color:var(--ink-soft);font-size:0.85rem;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.blog-row-action{flex-shrink:0;}
+.blog-row-link{font-family:'Space Mono',monospace;font-size:0.78rem;color:var(--olive-dark);text-decoration:none;font-weight:700;white-space:nowrap;}
+.blog-row-link:hover{color:var(--papaya);}
+.blog-row-soon{font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--olive);border:1px solid var(--line);border-radius:100px;padding:3px 10px;white-space:nowrap;}
+.blog-empty-note{text-align:center;color:var(--ink-soft);font-size:0.88rem;margin-top:24px;}
+@media (max-width:860px){
+.hero{padding:70px 0 56px;}
+.hero-grid{grid-template-columns:1fr;padding-top:10px;}
+.hero h1{font-size:2.1rem;}
+.sobre-grid{grid-template-columns:1fr;}
+.sobre-photo{aspect-ratio:3/4;max-width:320px;margin:0 auto;}
+.areas-grid{grid-template-columns:1fr;}
+.pilares-cards{grid-template-columns:1fr;}
+.enfoque-grid{grid-template-columns:1fr 1fr;}
+.pasos-grid{grid-template-columns:1fr 1fr;}
+.servicios-grid{grid-template-columns:1fr;}
+.contacto-grid{grid-template-columns:1fr;}
+.navlinks{display:none;}
+section{padding:56px 0;}
+.section-head h2{font-size:1.7rem;}
+.newsletter-grid{grid-template-columns:1fr;}
+.newsletter-grid > div:last-child{order:-1;}
+.newsletter h2{font-size:1.6rem;}
+.blog-row{flex-wrap:wrap;row-gap:4px;}
+.blog-row-icon{display:none;}
+.blog-row-body{flex:1 1 100%;}
+.blog-row-action{flex:1 1 100%;}
+.blog-row p{white-space:normal;}
+}
+@media (max-width:480px){
+.wrap{padding:0 16px;}
+nav.wrap{padding:8px 16px;}
+.hero h1{font-size:1.7rem;}
+.section-head h2{font-size:1.45rem;}
+.enfoque-grid{grid-template-columns:1fr;}
+.pasos-grid{grid-template-columns:1fr;}
+.test-grid{grid-template-columns:1fr;}
+.navcta{padding:9px 16px;font-size:0.82rem;}
+.cta-final h2{font-size:1.7rem;}
+}
+</style>
+</head>
+<body>
+<a href="https://wa.me/56965904270" class="wa-float" aria-label="Escribir por WhatsApp" target="_blank" rel="noopener">WA</a>
+<header>
+<nav class="wrap">
+<div class="logo"><a href="#">Sofía Cortés-Monroy</a></div>
+<ul class="navlinks">
+<li><a href="#sobre">Sobre mí</a></li>
+<li><a href="#areas">Áreas</a></li>
+<li><a href="#enfoque">Mi enfoque</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#faq">Preguntas</a></li>
+</ul>
+<a href="https://clinifica.com/pro/sofia-andrea-cortes-monroy-terra" class="navcta" target="_blank" rel="noopener">Agendar consulta</a>
+</nav>
+</header>
+<main>
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<div class="hero-accent"></div>
+<h1>Nutrición práctica y basada en evidencia para tu energía, tu equilibrio hormonal, digestivo y deportivo.</h1>
+</div>
+</div>
+</section>
+<section class="pilares-hero">
+<div class="wrap">
+<svg class="leaf-deco" width="140" height="50" viewBox="0 0 140 50" role="presentation">
+<path d="M10,25 Q70,5 130,25" fill="none" stroke="#7C9473" stroke-width="1.5" opacity="0.6"/>
+<ellipse cx="30" cy="20" rx="9" ry="5" fill="#8FAE80" opacity="0.7" transform="rotate(-30 30 20)"/>
+<ellipse cx="55" cy="12" rx="9" ry="5" fill="#8FAE80" opacity="0.7" transform="rotate(-15 55 12)"/>
+<ellipse cx="85" cy="12" rx="9" ry="5" fill="#8FAE80" opacity="0.7" transform="rotate(15 85 12)"/>
+<ellipse cx="110" cy="20" rx="9" ry="5" fill="#8FAE80" opacity="0.7" transform="rotate(30 110 20)"/>
+</svg>
+<span class="eyebrow">Enfoque clínico</span>
+<h2>Mis pilares de consulta nutricional</h2>
+<p style="color:var(--ink-soft);">Un abordaje integral y personalizado para cada etapa de tu vida.</p>
+<div class="pilares-cards">
+<div class="pilar-card">
+<div class="pilar-bar"></div>
+<div class="pilar-icon">🏃‍♀️</div>
+<h3>Enfoque Deportivo</h3>
+<p>Nutrición adaptada a tu rendimiento, recuperación y objetivos físicos.</p>
+</div>
+<div class="pilar-card">
+<div class="pilar-bar"></div>
+<div class="pilar-icon">🌿</div>
+<h3>Enfoque Digestivo</h3>
+<p>Estrategias para mejorar tu salud intestinal y bienestar diario.</p>
+</div>
+<div class="pilar-card">
+<div class="pilar-bar"></div>
+<div class="pilar-icon">⚖️</div>
+<h3>Enfoque Hormonal</h3>
+<p>Alimentación que acompaña tu regulación hormonal en condiciones como SOMP, resistencia a la insulina, fertilidad y menopausia.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="sobre" id="sobre">
+<div class="wrap sobre-grid">
+<div class="sobre-photo"><img src="sofia-perfil.jpg" alt="Sofía Cortés-Monroy, nutricionista" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+<div class="sobre-text">
+<span class="eyebrow">Sobre mí</span>
+<h2>Quién soy</h2>
+<p>Soy Sofía Cortés-Monroy, nutricionista clínica titulada de la Pontificia Universidad Católica de Chile.</p>
+<p>Lo que me llevó a enfocarme en nutrición deportiva, salud digestiva y hormonal, fue ver una y otra vez, que los planes generalizados y rígidos no duran: creo que la nutrición debe adaptarse a la vida de cada persona y a su contexto, no convertirse en una carga más. Me motiva especialmente acompañar a personas que quieren generar hábitos sostenibles, sentirse mejor en su día a día y alcanzar sus objetivos.</p>
+<p>En consulta trabajamos objetivos reales, para mejorar —tu energía, rendimiento, digestión y hábitos— adaptados a tu rutina, no al revés.</p>
+<p>Al trabajar conmigo puedes esperar: una evaluación completa de tus hábitos y objetivos, análisis de composición corporal, un plan personalizado que se ajuste a tu día a día y un seguimiento cercano para ir corrigiendo el rumbo en conjunto. Mi objetivo es que cada cambio sea realista, sostenible y tenga sentido para ti, entregándote herramientas que puedas mantener más allá de la consulta.</p>
+</div>
+</div>
+</section>
+<section id="areas">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Áreas de atención</span>
+<h2>¿En qué puedo ayudarte?</h2>
+<p>Tres formas comunes en que las personas llegan a consultarme.</p>
+</div>
+<div class="areas-grid">
+<div class="area-card">
+<h3>Nutrición deportiva</h3>
+<p>Para personas que entrenan, practican deporte o quieren mejorar su rendimiento, recuperación y composición corporal.</p>
+</div>
+<div class="area-card">
+<h3>Salud digestiva</h3>
+<p>Para quienes buscan mejorar su alimentación y trabajar hábitos relacionados con su bienestar digestivo.</p>
+</div>
+<div class="area-card">
+<h3>Enfoque hormonal</h3>
+<p>Para personas que buscan apoyar su equilibrio hormonal en procesos como el ciclo, la fertilidad, la resistencia a la insulina o la menopausia.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="enfoque" id="enfoque">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Mi forma de trabajar</span>
+<h2>Más que una pauta alimentaria</h2>
+<p>Una consulta conmigo es mucho más que entregar una pauta genérica. Así es como trabajo:</p>
+</div>
+<div class="enfoque-grid">
+<div class="enfoque-item"><h3>Personalización</h3><p>Cada plan parte de tu historia, tus gustos y tu rutina real.</p></div>
+<div class="enfoque-item"><h3>Educación nutricional</h3><p>Entiendes el porqué de cada indicación.</p></div>
+<div class="enfoque-item"><h3>Hábitos sostenibles</h3><p>Buscamos cambios que puedas mantener, no soluciones de corto plazo.</p></div>
+<div class="enfoque-item"><h3>Guías complementarias</h3><p>Material educativo extra para reforzar tu proceso.</p></div>
+<div class="enfoque-item"><h3>Objetivos realistas</h3><p>Metas medibles y alcanzables, revisadas en conjunto.</p></div>
+<div class="enfoque-item"><h3>Adaptación a tu rutina</h3><p>Tú no te adaptas a la dieta; el plan se adapta a ti.</p></div>
+</div>
+</div>
+</section>
+<section class="pasos">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Proceso</span>
+<h2>¿Cómo funciona la consulta?</h2>
+</div>
+<div class="pasos-grid">
+<div class="paso"><div class="paso-num">1</div><h3>Agenda tu consulta</h3><p>Online o a domicilio, según lo que te acomode.</p></div>
+<div class="paso"><div class="paso-num">2</div><h3>Conversamos</h3><p>Revisamos tus objetivos, hábitos y necesidades.</p></div>
+<div class="paso"><div class="paso-num">3</div><h3>Diseñamos tu plan</h3><p>Una estrategia nutricional personalizada.</p></div>
+<div class="paso"><div class="paso-num">4</div><h3>Hacemos seguimiento</h3><p>Ajustamos el plan según tu progreso.</p></div>
+<div class="paso"><div class="paso-num">5</div><h3>Agendamos tu próximo control</h3><p>Clave para sostener resultados en el tiempo.</p></div>
+</div>
+<div class="consulta-foto">
+<img src="images/sofia-medicion.jpg" alt="Medición de composición corporal en consulta presencial" style="width:100%;aspect-ratio:16/10;object-fit:cover;display:block;">
+<p>Medición de composición corporal en consulta presencial</p>
+</div>
+</div>
+</section>
+<section id="servicios">
+<div class="wrap">
+<div class="section-head">
+<h2 style="font-size:2.4rem;">Mis servicios</h2>
+</div>
+<p class="servicios-subhead">Consultas online</p>
+<div class="servicios-grid">
+<div class="servicio-card">
+<h3>Consulta nutricional online de ingreso</h3>
+<span class="servicio-modalidad">50 minutos</span>
+<span class="servicio-price">$32.000</span>
+<p style="margin-top:12px;">Incluye:</p>
+<ul>
+<li>Evaluación completa de tu estado nutricional, antecedentes y objetivos</li>
+<li>Análisis de tu estilo de vida y factores que pueden estar afectando tu salud</li>
+<li>Plan alimentario 100% personalizado</li>
+<li>Recomendaciones y objetivos nutricionales prácticos, adaptados a tu contexto</li>
+<li>Orientación en suplementación nutricional cuando sea necesario</li>
+<li>Material educativo adicional y personalizado</li>
+<li>Seguimiento por WhatsApp hasta tu próxima consulta</li>
+</ul>
+</div>
+<div class="servicio-card">
+<h3>Consulta nutricional online de seguimiento</h3>
+<span class="servicio-modalidad">40 minutos</span>
+<span class="servicio-price">$27.000</span>
+<p style="margin-top:12px;">Incluye:</p>
+<ul>
+<li>Evaluación de avances logrados y objetivos aún pendientes</li>
+<li>Percepción de avances, síntomas o molestias, y cómo te has sentido con el plan</li>
+<li>Ajustes necesarios en tu pauta personalizada</li>
+<li>Redefinición de metas para mantener progreso y motivación</li>
+</ul>
+</div>
+</div>
+<p class="servicios-subhead">Consultas a domicilio · Las Condes, Vitacura, Lo Barnechea, La Reina, Providencia</p>
+<div class="servicios-grid">
+<div class="servicio-card">
+<h3>Primera consulta nutricional presencial</h3>
+<span class="servicio-modalidad">50 minutos</span>
+<span class="servicio-price">$45.000</span>
+<p style="margin-top:12px;">Incluye:</p>
+<ul>
+<li>Evaluación completa de tu estado nutricional, antecedentes y objetivos</li>
+<li>Análisis de tu estilo de vida y factores que pueden estar afectando tu salud</li>
+<li>Medición de composición corporal: peso, talla, pliegues cutáneos y perímetros corporales, con informe PDF</li>
+<li>Plan alimentario 100% personalizado</li>
+<li>Recomendaciones y objetivos nutricionales prácticos, adaptados a tu contexto</li>
+<li>Orientación en suplementación nutricional cuando sea necesario</li>
+<li>Material educativo adicional y personalizado</li>
+<li>Seguimiento por WhatsApp hasta tu próxima consulta</li>
+</ul>
+</div>
+<div class="servicio-card">
+<h3>Consulta nutricional presencial de seguimiento</h3>
+<span class="servicio-modalidad">40 minutos</span>
+<span class="servicio-price">$37.000</span>
+<p style="margin-top:12px;">Incluye:</p>
+<ul>
+<li>Evaluación de avances logrados y objetivos aún pendientes</li>
+<li>Percepción de avances, síntomas o molestias, y cómo te has sentido con el plan</li>
+<li>Actualización de mediciones antropométricas</li>
+<li>Ajustes necesarios en tu pauta personalizada</li>
+<li>Redefinición de metas para mantener progreso y motivación</li>
+</ul>
+</div>
+</div>
+<p class="servicios-subhead">Consulta presencial en box · Simple Box, Calle Magnere Nº1540, oficina 1007, Providencia</p>
+<div class="servicios-grid">
+<div class="servicio-card">
+<h3>Consulta nutricional presencial (ingreso)</h3>
+<span class="servicio-modalidad">50 minutos</span>
+<span class="servicio-price">$47.000</span>
+<p style="margin-top:12px;">Incluye:</p>
+<ul>
+<li>Evaluación completa de tu estado nutricional, antecedentes y objetivos</li>
+<li>Análisis de tu estilo de vida y factores que pueden estar afectando tu salud</li>
+<li>Medición de composición corporal: peso, talla, pliegues cutáneos y perímetros corporales, con informe PDF</li>
+<li>Plan alimentario 100% personalizado</li>
+<li>Recomendaciones y objetivos nutricionales prácticos, adaptados a tu contexto</li>
+<li>Orientación en suplementación nutricional cuando sea necesario</li>
+<li>Material educativo adicional y personalizado</li>
+<li>Seguimiento por WhatsApp hasta tu próxima consulta</li>
+</ul>
+</div>
+<div class="servicio-card">
+<h3>Consulta nutricional presencial de seguimiento</h3>
+<span class="servicio-modalidad">40 minutos</span>
+<span class="servicio-price">$39.000</span>
+<p style="margin-top:12px;">Incluye:</p>
+<ul>
+<li>Evaluación de avances logrados y objetivos aún pendientes</li>
+<li>Percepción de avances, síntomas o molestias, y cómo te has sentido con el plan</li>
+<li>Actualización de mediciones antropométricas</li>
+<li>Ajustes necesarios en tu pauta personalizada</li>
+<li>Redefinición de metas para mantener progreso y motivación</li>
+</ul>
+</div>
+</div>
+<p class="servicios-subhead">Pack</p>
+<div class="servicios-grid">
+<div class="pack-card">
+<h3>Pack 3 sesiones online</h3>
+<p>Ideal para quienes buscan un proceso acompañado y sostenido en el tiempo.</p>
+<ul>
+<li>1 consulta inicial online (50 min) → evaluación completa + plan personalizado</li>
+<li>2 consultas de seguimiento online (40 min c/u) → revisión de avances, percepción de síntomas, ajustes en tu pauta y redefinición de metas</li>
+<li>Material educativo digital adaptado a tu proceso</li>
+<li>Acompañamiento por WhatsApp entre sesiones para resolver dudas y mantener motivación</li>
+</ul>
+<div class="pack-precio">
+<span class="tachado">Valor total: $86.000</span>
+<span class="final">Precio pack: $80.000</span>
+</div>
+<p class="pack-ahorro">✨ Ahorras $6.000</p>
+</div>
+</div>
+</div>
+</section>
+<section id="blog">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Blog</span>
+<h2>Ideas y tips de nutrición</h2>
+<p>Artículos cortos sobre nutrición deportiva, salud digestiva y equilibrio hormonal.</p>
+</div>
+<div class="blog-list">
+<div class="blog-row">
+<div class="blog-row-icon">🏃‍♀️</div>
+<div class="blog-row-body">
+<span class="blog-row-tag">Nutrición deportiva</span>
+<h3><a href="blog-errores-suplementacion.html">Los errores más comunes al tomar suplementos deportivos</a></h3>
+<p>Proteína, creatina, pre-entrenos: antes de sumar algo nuevo a tu rutina, revisa estos 4 errores.</p>
+</div>
+<div class="blog-row-action"><a class="blog-row-link" href="blog-errores-suplementacion.html">Leer más →</a></div>
+</div>
+<div class="blog-row">
+<div class="blog-row-icon">⚖️</div>
+<div class="blog-row-body">
+<span class="blog-row-tag">Nutrición deportiva</span>
+<h3><a href="blog-composicion-corporal.html">Por qué tu composición corporal dice más que la báscula</a></h3>
+<p>El peso es un dato, no un diagnóstico. Mirar solo los kilos puede esconder lo que realmente importa.</p>
+</div>
+<div class="blog-row-action"><a class="blog-row-link" href="blog-composicion-corporal.html">Leer más →</a></div>
+</div>
+<div class="blog-row">
+<div class="blog-row-icon">💪</div>
+<div class="blog-row-body">
+<span class="blog-row-tag">Nutrición deportiva</span>
+<h3><a href="blog-empezar-entrenar-sin-asesoria.html">Empezar a entrenar sin asesoría nutricional</a></h3>
+<p>Los primeros meses de un nuevo hábito deportivo son clave. Los errores más comunes que veo.</p>
+</div>
+<div class="blog-row-action"><a class="blog-row-link" href="blog-empezar-entrenar-sin-asesoria.html">Leer más →</a></div>
+</div>
+<div class="blog-row">
+<div class="blog-row-icon">🌿</div>
+<div class="blog-row-body">
+<span class="blog-row-tag">Salud digestiva</span>
+<h3>Cómo mejorar tu digestión con hábitos simples</h3>
+<p>Pequeños cambios en tu alimentación diaria que marcan una gran diferencia digestiva.</p>
+</div>
+<div class="blog-row-action"><span class="blog-row-soon">Próximamente</span></div>
+</div>
+<div class="blog-row">
+<div class="blog-row-icon">⚖️</div>
+<div class="blog-row-body">
+<span class="blog-row-tag">Enfoque hormonal</span>
+<h3>Alimentación y equilibrio hormonal: por dónde empezar</h3>
+<p>Una guía introductoria sobre cómo la alimentación acompaña tu regulación hormonal.</p>
+</div>
+<div class="blog-row-action"><span class="blog-row-soon">Próximamente</span></div>
+</div>
+</div>
+<p class="blog-empty-note">🌱 Muy pronto más contenido por aquí. Sígueme en <a href="https://instagram.com/nutri_sofiacm" target="_blank" rel="noopener" style="color:var(--papaya);text-decoration:underline;">Instagram</a> mientras tanto.</p>
+</div>
+</section>
+<section class="testimonios" id="testimonios">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Testimonios</span>
+<h2>Lo que dicen mis pacientes</h2>
+</div>
+<div class="test-grid test-grid-3">
+<div class="test-card">
+<p class="quote">"Muchas gracias Sofía! Recién me di un tiempo ahora y lo vi completo, espero estés muy bien y que podamos vernos para una próxima evaluación. Cariños y que tengas lindo descanso."</p>
+<p class="author">— Paciente</p>
+</div>
+<div class="test-card">
+<p class="quote">"Mil gracias Sofía!! Me encantó la sesión contigo ayer, cariños."</p>
+<p class="author">— Francisca</p>
+</div>
+<div class="test-card">
+<p class="quote">"Excelente atención y dedicación. Me sentí escuchada y acompañada en todo el proceso, con recomendaciones claras y fáciles de aplicar en mi día a día."</p>
+<p class="author">— Paciente, vía Clinifica</p>
+</div>
+</div>
+</div>
+</section>
+<section class="newsletter" id="guia-gratis">
+<div class="wrap newsletter-grid">
+<div>
+<span class="newsletter-badge">Recurso gratuito</span>
+<h2>Descarga tu guía práctica para escoger suplementos nutricionales</h2>
+<p>Todo lo que necesitas saber antes de elegir un suplemento: cuándo podrías necesitar uno, qué categorías existen y por qué el asesoramiento profesional hace la diferencia. Déjame tu correo y te la envío gratis.</p>
+<style type="text/css">
+.ml-form-embedSubmitLoad { display: inline-block; width: 20px; height: 20px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+.ml-form-embedSubmitLoad:after { content: " "; display: block; width: 11px; height: 11px; margin: 1px; border-radius: 50%; border: 4px solid #fff; border-color: #fff #fff #fff transparent; animation: ml-form-embedSubmitLoad 1.2s linear infinite; }
+@keyframes ml-form-embedSubmitLoad { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+#mlb2-44968098.ml-form-embedContainer { box-sizing: border-box; display: table; margin: 0; width: 100% !important; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper { background-color: transparent; border: none; box-sizing: border-box; display: inline-block !important; margin: 0; padding: 0; width: 100%; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-align-center { text-align: left; display:block !important; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 100%; width: 100%; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody, #mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody { padding: 0; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent, #mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent { display:none; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-block-form { margin: 0; width: 100%; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-form-formContent { margin: 0 0 10px 0; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-form-fieldRow { margin: 0 0 10px 0; width: 100%; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-form-fieldRow input {
+background-color: rgba(255,255,255,0.08) !important; color: var(--paper) !important; border-color: rgba(239,234,224,0.3) !important; border-radius: 100px !important; border-style: solid !important; border-width: 1px !important;
+font-family: 'Work Sans', sans-serif !important; font-size: 0.95rem !important; line-height: 21px !important; padding: 14px 18px !important; width: 100% !important; box-sizing: border-box !important;
+}
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-form-fieldRow input::placeholder { color: var(--paper-2) !important; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedSubmit { margin: 0; float: none; width: 100%; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedSubmit button {
+background-color: var(--papaya) !important; border: none !important; border-radius: 100px !important; color: #fff !important; cursor: pointer;
+font-family: 'Work Sans', sans-serif !important; font-size: 0.95rem !important; font-weight: 500 !important; padding: 14px !important; width: 100% !important; box-sizing: border-box !important;
+}
+#mlb2-44968098.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedSubmit button:hover { background-color: #c9591f !important; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-successBody .ml-form-successContent { display:block !important; background: rgba(239,234,224,0.12); border: 1px solid rgba(239,234,224,0.3); border-radius: 14px; padding: 18px 20px; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-successBody .ml-form-successContent h4 { display:block !important; color: var(--paper); font-family:'Fraunces',serif; font-size:1.1rem; margin:0 0 6px; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-successBody .ml-form-successContent p { display:block !important; color: var(--paper-2); font-family:'Work Sans',sans-serif; font-size:0.92rem; margin:0; }
+#mlb2-44968098.ml-form-embedContainer .ml-form-successBody .ml-form-successContent a { color: var(--papaya-light); font-weight:600; }
+</style>
+<div id="mlb2-44968098" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-44968098">
+<div class="ml-form-align-center">
+<div class="ml-form-embedWrapper embedForm">
+<div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+<div class="ml-form-embedContent" style=" ">
+<h4>Recibe tu guía gratis</h4>
+<p>Ingresa tu correo y te la enviamos al instante.</p>
+</div>
+<form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2583524/forms/196172268499371165/subscribe" data-code="" method="post" target="_blank">
+<div class="ml-form-formContent">
+<div class="ml-form-fieldRow ml-last-item">
+<div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+<input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Tu correo electrónico" autocomplete="email">
+</div>
+</div>
+</div>
+<input type="hidden" name="ml-submit" value="1">
+<div class="ml-form-embedSubmit">
+<button type="submit" class="primary">Quiero mi guía gratis</button>
+<button disabled="disabled" style="display: none;" type="button" class="loading">
+<div class="ml-form-embedSubmitLoad"></div>
+<span class="sr-only">Loading...</span>
+</button>
+</div>
+<input type="hidden" name="anticsrf" value="true">
+</form>
+</div>
+<div class="ml-form-successBody row-success" style="display: none">
+<div class="ml-form-successContent">
+<h4>✅ ¡Listo!</h4>
+<p>Te enviamos la guía a tu correo. Revisa tu bandeja de entrada (y spam por si acaso).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+function ml_webform_success_44968098() {
+var $ = ml_jQuery || jQuery;
+$('.ml-subscribe-form-44968098 .row-success').show();
+$('.ml-subscribe-form-44968098 .row-form').hide();
+}
+</script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
+<script>fetch("https://assets.mailerlite.com/jsonp/2583524/forms/196172268499371165/takel")</script>
+<p class="newsletter-note">Nunca compartiré tu correo con nadie. Puedes darte de baja cuando quieras.</p>
+</div>
+<div class="newsletter-cover">
+<div class="photo-placeholder">Próximamente</div>
+</div>
+</div>
+</section>
+<section class="faq" id="faq">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Preguntas frecuentes</span>
+<h2>Antes de agendar</h2>
+</div>
+<div style="max-width:700px;margin:0 auto;">
+<details class="faq-item"><summary>¿La consulta es online o presencial?</summary><p>Tienes tres modalidades disponibles: consulta online por videollamada, a domicilio en Las Condes, Lo Barnechea, Vitacura, La Reina y Providencia, o presencial en box en Providencia (Simple Box).</p></details>
+<details class="faq-item"><summary>¿Qué incluye la consulta?</summary><p>Evaluación completa de tu estado nutricional, antecedentes y objetivos; análisis de tu estilo de vida y factores que pueden estar afectando tu salud; plan alimentario 100% personalizado; recomendaciones y objetivos nutricionales prácticos, adaptados a tu contexto; orientación en suplementación nutricional cuando sea necesario; material educativo adicional y personalizado; y seguimiento por WhatsApp hasta tu próxima consulta.</p></details>
+<details class="faq-item"><summary>¿Necesito llevar exámenes?</summary><p>No es necesario, pero si tienes exámenes recientes, puedes llevarlos para complementar la evaluación.</p></details>
+<details class="faq-item"><summary>¿La pauta alimentaria es personalizada?</summary><p>Sí, cada plan se construye a partir de tu historia, tus objetivos y tu rutina real.</p></details>
+<details class="faq-item"><summary>¿Trabajas con deportistas?</summary><p>Sí, nos enfocamos en tu rendimiento, recuperación, suplementación y composición corporal — es una de mis áreas de enfoque.</p></details>
+<details class="faq-item"><summary>¿Puedo consultar si mi objetivo no es bajar de peso?</summary><p>Sí. Trabajo objetivos de rendimiento, salud digestiva, energía y cambio de hábitos, no solo composición corporal.</p></details>
+<details class="faq-item"><summary>¿Cuánto dura el seguimiento?</summary><p>Depende de cada paciente: el ritmo y la duración se van definiendo según tus objetivos y tu progreso.</p></details>
+<details class="faq-item"><summary>¿Cómo puedo agendar?</summary><p>Puedes agendar directamente en el sitio web, eligiendo el horario que más te acomode.</p></details>
+</div>
+</div>
+</section>
+<section class="cta-final">
+<div class="wrap">
+<h2>¿Quieres empezar a trabajar en tu alimentación?</h2>
+<p>Escríbeme y conversamos sobre tus objetivos, tu rutina y cómo puedo ayudarte.</p>
+<a href="https://clinifica.com/pro/sofia-andrea-cortes-monroy-terra" class="btn btn-primary" target="_blank" rel="noopener">Agendar mi consulta</a>
+</div>
+</section>
+<section id="contacto">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Contacto</span>
+<h2>Conversemos</h2>
+<p>Elige la vía que te acomode, te responderé a la brevedad.</p>
+</div>
+<div class="contacto-grid">
+<div>
+<div class="contact-item"><div class="contact-icon">Wa</div><div><h3>WhatsApp</h3><p><a href="https://wa.me/56965904270" target="_blank" rel="noopener">+56 9 6590 4270</a></p></div></div>
+<div class="contact-item"><div class="contact-icon">@</div><div><h3>Correo</h3><p><a href="mailto:Sofiachi_08@uc.cl">Sofiachi_08@uc.cl</a></p></div></div>
+<div class="contact-item"><div class="contact-icon">Ig</div><div><h3>Instagram</h3><p><a href="https://instagram.com/nutri_sofiacm" target="_blank" rel="noopener">@nutri_sofiacm</a></p></div></div>
+<div class="contact-item"><div class="contact-icon">Zn</div><div><h3>Zona de atención a domicilio</h3><p>Las Condes, Lo Barnechea, Vitacura, La Reina y Providencia. Consultas online desde cualquier lugar.</p></div></div>
+<div class="contact-item"><div class="contact-icon">Bx</div><div><h3>Consulta presencial en box</h3><p>Simple Box · Calle Magnere Nº1540, oficina 1007, Providencia.</p></div></div>
+</div>
+<form onsubmit="event.preventDefault(); alert('Formulario de ejemplo: conéctalo a tu correo o WhatsApp.');">
+<label for="nombre">Nombre</label>
+<input id="nombre" type="text" placeholder="Tu nombre" required>
+<label for="objetivo">¿Cuál es tu objetivo?</label>
+<input id="objetivo" type="text" placeholder="Rendimiento, digestión, hábitos...">
+<label for="mensaje">Mensaje</label>
+<textarea id="mensaje" placeholder="Cuéntame qué necesitas"></textarea>
+<button type="submit" class="btn btn-primary">Enviar mensaje</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">© 2026 Sofía Cortés-Monroy · Nutricionista clínica · Consultas online y a domicilio en Santiago oriente · <a href="https://nutrisofiacm.cl" style="color:inherit;text-decoration:underline;">nutrisofiacm.cl</a></div>
+</footer>
+</body>
+</html>
